@@ -29,8 +29,9 @@ header {
   font-size: 1.25vw;
   text-align: center;
   line-height: 1500px;
-  color: #fff;
+  color: #707070;
   /* background-color: #707070; */
+  border-right: 1px solid #707070;
 }
 
 #section #contents {
@@ -61,9 +62,8 @@ footer {
 #section #contents #contentsHeader #className {
   width: 23.4896vw;
   height: 35px;
-  font-family: YDIYGO350;
   font-size: 1.4583vw;
-  font-weight: normal;
+  font-weight: bold;
   font-stretch: normal;
   font-style: normal;
   line-height: 1.43;
@@ -90,7 +90,6 @@ footer {
   width: 19.0625vw;
   /* height: 30px; */
   height: 42px;
-  font-family: YDIYGO350;
   font-size: 1.3542vw;
   font-weight: normal;
   font-stretch: normal;
@@ -107,7 +106,6 @@ footer {
 #section #contents #contentsHeader #contentsHeaderInfo #projectCount {
   width: 20.0521vw;
   height: 42px;
-  font-family: YDIYGO350;
   font-size: 1.25vw;
   font-weight: normal;
   font-stretch: normal;
@@ -184,7 +182,6 @@ footer {
   #articleContentsTitle {
   height: 37px;
   margin-top: 20.5px;
-  font-family: YDIYGO350;
   font-size: 1.5625vw;
   font-weight: normal;
   font-stretch: normal;
@@ -205,7 +202,6 @@ footer {
   #articleContentsDesc {
   height: 164px;
   margin-top: 18px;
-  font-family: YDIYGO350;
   font-size: 1.25vw;
   font-weight: normal;
   font-stretch: normal;
@@ -246,7 +242,6 @@ footer {
 #likeCount {
   width: 64px;
   height: 27px;
-  font-family: YDIYGO350;
   font-size: 1.3542vw;
   font-weight: normal;
   font-stretch: normal;
