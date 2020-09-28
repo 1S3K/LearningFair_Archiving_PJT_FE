@@ -21,8 +21,6 @@ header {
 #section nav {
   width: 15.4688vw;
   height: 100%; /* 유동적 */
-  /* background-color: #444; */
-  /* border-right: 1px solid gray; */
 }
 
 #section nav #navContents {
@@ -326,4 +324,8 @@ footer {
   background-color: #154483;
   font-size: 1.0417vw;
   color: #fff;
+}
+
+video {
+  border: 1px solid #707070;
 }
