@@ -147,11 +147,16 @@ footer {
 /* articleImg = 698px = 36.3542vw */
 /* articleShow = 293px = 15.2604vw */
 
-#section #contents #contentsArticle .article-container #article #articleImg {
+#section
+  #contents
+  #contentsArticle
+  .article-container
+  #article
+  #articleImg
+  img {
   /* background-color: #111; */
-  background-image: url(../../assets/image/article_test_Img01.png);
   background-repeat: no-repeat;
-  background-size: cover;
+  /* background-size: contain; */
   width: 27.2917vw;
   height: 295px;
   border: solid 1px #707070;
