@@ -116,6 +116,12 @@ footer {
   color: #707070;
   text-align: right;
 }
+
+#projectCount strong {
+  font-weight: bold;
+  color: #154483;
+}
+
 /* // 컨텐츠 헤더 영역 끝 */
 
 /* 컨텐츠 아티클 영역 시작 */
