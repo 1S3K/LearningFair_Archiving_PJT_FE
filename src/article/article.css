@@ -327,5 +327,6 @@ footer {
 }
 
 video {
+  display: none;
   border: 1px solid #707070;
 }
