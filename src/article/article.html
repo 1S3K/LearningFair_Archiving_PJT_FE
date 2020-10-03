@@ -23,9 +23,39 @@
           <div id="contentsHeader">
             <div id="className">인문사회과학캠퍼스 3분반</div>
             <div id="contentsHeaderInfo">
+              <!-- 필터 작업 : select-box -->
+              <!-- filterMenu가 container -->
               <div id="filterMenu">
-                <p>좋아요순</p>
+                <!-- <p>좋아요순</p> -->
+
+                <div class="select-box">
+                  <div class="options-container">
+                    <div class="option">
+                      <input
+                        type="radio"
+                        class="radio"
+                        id="likeOrder"
+                        name="category"
+                      />
+                      <label for="likeOrder">좋아요순</label>
+                    </div>
+
+                    <div class="option">
+                      <input
+                        type="radio"
+                        class="radio"
+                        id="nameOrder"
+                        name="category"
+                      />
+                      <label for="nameOrder">이름순</label>
+                    </div>
+                  </div>
+
+                  <div class="selected">좋아요순</div>
+                </div>
+                <!-- select-box 마무리 -->
               </div>
+
               <div id="projectCount">
                 총 <strong>48개</strong>의 작품이 등록되었습니다.
               </div>
@@ -85,5 +115,6 @@
     <script src="../../js/showVideo.js"></script>
     <script src="../../js/clickedLikeBtn.js"></script>
     <script src="../../js/showImage.js"></script>
+    <script src="../../js/selectFilter.js"></script>
   </body>
 </html>
