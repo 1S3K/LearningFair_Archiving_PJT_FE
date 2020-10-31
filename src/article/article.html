@@ -13,19 +13,81 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.3.7/viewer.min.js"></script>
   </head>
   <body>
-    <header>header</header>
+    <!-- header area -->
+    <header>
+      <div class="header-container">
+        <img class="header-logo" src="../../assets/image/logo.png" alt="성균SW교육원">
+        <div class="header-user">김재현님 입장</div>
+      </div>
+    </header>
+    <!--// header area -->
+
+    <!-- section area -->
     <div id="section">
-      <nav>
-        <div id="navContents">nav</div>
+      <nav class = "sidenav">
+        <button class="dropdown-btn">· 인문사회과학캠퍼스
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+          <a href="#">· 1분반</a>
+          <a href="#">· 2분반</a>
+          <a href="#">· 3분반</a>
+        </div>
+
+        <button class="dropdown-btn">· 자연과학캠퍼스
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+          <a href="#">· 1분반</a>
+          <a href="#">· 2분반</a>
+          <a href="#">· 3분반</a>
+        </div>
+
+        <button class="dropdown-btn">· 시상식
+          <i class="fa fa-caret-down"></i>
+        </button>
+      
+
+        
       </nav>
       <div id="contents">
         <div id="contents-container">
           <div id="contentsHeader">
             <div id="className">인문사회과학캠퍼스 3분반</div>
             <div id="contentsHeaderInfo">
+              <!-- 필터 작업 : select-box -->
+              <!-- filterMenu가 container -->
               <div id="filterMenu">
-                <p>좋아요순</p>
+                <!-- <p>좋아요순</p> -->
+
+                <div class="select-box">
+                  <div class="options-container">
+                    <div class="option">
+                      <input
+                        type="radio"
+                        class="radio"
+                        id="likeOrder"
+                        name="category"
+                      />
+                      <label for="likeOrder">좋아요순</label>
+                    </div>
+
+                    <div class="option">
+                      <input
+                        type="radio"
+                        class="radio"
+                        id="nameOrder"
+                        name="category"
+                      />
+                      <label for="nameOrder">이름순</label>
+                    </div>
+                  </div>
+
+                  <div class="selected">좋아요순</div>
+                </div>
+                <!-- select-box 마무리 -->
               </div>
+
               <div id="projectCount">
                 총 <strong>48개</strong>의 작품이 등록되었습니다.
               </div>
@@ -85,5 +147,7 @@
     <script src="../../js/showVideo.js"></script>
     <script src="../../js/clickedLikeBtn.js"></script>
     <script src="../../js/showImage.js"></script>
+    <script src="../../js/selectFilter.js"></script>
+    <script src="../../js/leftNavi.js"></script>
   </body>
 </html>
