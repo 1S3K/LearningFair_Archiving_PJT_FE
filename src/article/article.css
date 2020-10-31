@@ -6,8 +6,9 @@ header {
   /* height: 108px; */
   height: 10vh;
   background-color: #fff;
-
-  border-bottom: 1px solid #707070;
+  border-image: linear-gradient(to right, #e1e857, #004483);
+  border-image-slice: 1;
+  border-bottom: solid 2px;
   font-size: 24px;
   text-align: center;
   line-height: 10vh;
@@ -32,7 +33,7 @@ header {
   line-height: 1500px;
   color: #707070;
   /* background-color: #707070; */
-  border-right: 1px solid #707070;
+  /* border-right: 1px solid #707070; */
 }
 
 #section #contents {
@@ -58,6 +59,25 @@ footer {
   line-height: 10vh;
   color: #666;
 }
+
+/* 헤더 영역 */
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo {
+  margin-left: 1.25vw;
+  width: 15.9375vw;
+  height: 70px;
+  object-fit: fill;
+}
+
+.header-user {
+  padding-right: 1.25vw;
+}
+/* //헤더 영역 */
 
 /* 컨텐츠 헤더 영역 */
 #section #contents #contentsHeader {
@@ -426,37 +446,36 @@ video {
 }
 /* //비디오 영역 마무리*/
 
-
 .sidenav {
   height: 100%;
   width: 100%;
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   overflow-x: hidden;
   padding-top: 20px;
-  border : 1px solid #F0F0F0
+  /* border: 1px solid #f0f0f0; */
 }
 
 /* Style the sidenav links and the dropdown button */
-.sidenav a, .dropdown-btn {
+.sidenav a,
+.dropdown-btn {
   padding: 6px 20px 6px 16px;
   text-decoration: none;
-  font-size:18px;
+  font-size: 18px;
   color: #818181;
   display: block;
   border: none;
   background: none;
-  width:100%;
+  width: 100%;
   text-align: right;
   cursor: pointer;
   outline: none;
 }
 
-.dropdown-btn
-{
-  border-top : solid 0.5px #9d9d9d;
+.dropdown-btn {
+  border-top: solid 0.5px #9d9d9d;
 
   width: 100%;
   height: 21px;
@@ -470,7 +489,8 @@ video {
   color: #7d7b7c;
 }
 /* On mouse-over */
-.sidenav a:hover,.dropdown-btn:hover {
+.sidenav a:hover,
+.dropdown-btn:hover {
   color: #f1f1f1;
 }
 
@@ -483,7 +503,7 @@ video {
 
 /* Add an active class to the active dropdown button */
 .active {
-  background-color: rgb(160,203,59);
+  background-color: rgb(160, 203, 59);
   color: #fdf8fa;
   font-weight: 500;
 }
@@ -491,14 +511,13 @@ video {
 /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
 .dropdown-container {
   display: none;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   color: rgb(21, 67, 131);
   padding-left: 8px;
   padding-right: 0px;
   text-align: left;
 }
-.dropdown-container a
-{
+.dropdown-container a {
   width: 175px;
   height: 21px;
   font-size: 18px;
@@ -510,21 +529,17 @@ video {
   text-align: left;
   color: #9d9d9d;
   padding-top: 10px;
-  padding-bottom:  10px;
-  padding-left : 30px;
+  padding-bottom: 10px;
+  padding-left: 30px;
 }
-.dropdown-container a:active
-{
-  color : rgb(21, 67, 131);
-  
+.dropdown-container a:active {
+  color: rgb(21, 67, 131);
 }
 
-.dropdown-btn
-{
+.dropdown-btn {
   text-align: left;
   height: 42px;
 }
-
 
 /* Optional: Style the caret down icon */
 .fa-caret-down {
