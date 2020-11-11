@@ -1,0 +1,167 @@
+/* 전체 레이아웃 */
+header {
+    position: sticky; /* top에 고정 */
+    top: 0;
+    width: 100vw;
+    /* height: 108px; */
+    height: 10vh;
+    background-color: #fff;
+    border-image: linear-gradient(to right, #e1e857, #004483);
+    border-image-slice: 1;
+    border-bottom: solid 2px;
+    font-size: 24px;
+    text-align: center;
+    line-height: 10vh;
+    color: #707070;
+    z-index: 1000;
+    
+  }
+
+    /* 헤더 영역 */
+    .header-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      
+      .header-logo {
+        margin-left: 1.25vw;
+    
+        object-fit: fill;
+      }
+
+      /* //헤더 영역 */
+      
+  
+  #section {
+    display: flex;
+    flex-direction: column;
+    height: 90vh; /* 임시 높이 */
+    }
+  
+
+    .main_banner_area
+    {
+        margin : 5vh auto;
+    }
+    
+    .main_banner_img
+    {
+        height: 30vh;
+    }
+
+    .login_button_area
+    {
+        margin-top: 30px;
+        text-align: center;
+    }
+
+
+    button{
+        background:#9FCB3B;
+        color:#fff;
+        border:none;
+        position:relative;
+        height:60px;
+        font-size:1.6em;
+        padding:0 2em;
+        cursor:pointer;
+        transition:800ms ease all;
+        outline:none;
+      }
+      button:hover{
+        background:#fff;
+        color:#9FCB3B;
+      }
+      button:before,button:after{
+        content:'';
+        position:absolute;
+        top:0;
+        right:0;
+        height:2px;
+        width:0;
+        background: #9FCB3B;
+        transition:400ms ease all;
+      }
+      button:after{
+        right:inherit;
+        top:inherit;
+        left:0;
+        bottom:0;
+      }
+      button:hover:before,button:hover:after{
+        width:100%;
+        transition:800ms ease all;
+      }
+      
+      
+
+
+
+
+
+  /* footer 부분 */
+footer {
+    width: 100vw;
+    /* height: 108px; */
+    height: 10vh;
+    margin-top : 15vh;
+  
+  
+  
+    font-size: 24px;
+    text-align: center;
+    line-height: 10vh;
+  
+  }
+ 
+  
+
+  
+  
+  #footer_divider
+  {
+    border : none;
+    width: 100%;
+    height: 2px;
+    margin: 0 0 8px;
+    background-image: linear-gradient(to bottom, #e1e857, #004483);
+  }
+  
+  #footer_contents
+  {
+    display: flex;
+    width: 100vw;
+    height: 10vh;
+    position: relative;
+  }
+  #info
+  {
+    display: flex;
+    text-align: center;
+    margin : auto;
+  
+  }
+  
+  .footer-logo
+  {
+    width:270px;
+    height:93px;
+  
+  }
+  
+  #school_info
+  {
+    width: 80%;
+    height: 101px;
+    margin: 19px 0 0 14px;
+    font-size: 16px;
+    text-align: left;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.22;
+    font-weight: 100;
+    letter-spacing: normal;
+    color: #7d7b7c;
+    
+  }

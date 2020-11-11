@@ -1,3 +1,9 @@
+html,body{
+  height: 100%;
+  margin: 0;
+}
+
+
 /* 전체 레이아웃 */
 header {
   position: sticky; /* top에 고정 */
@@ -13,16 +19,20 @@ header {
   text-align: center;
   line-height: 10vh;
   color: #707070;
+  z-index: 1000;
+  
 }
 
 #section {
   display: flex;
-  height: 1500px; /* 임시 높이 */
+  min-height: 100%; /* 임시 높이 */
+  padding-bottom: 10vh;
+  
 }
 
 #section nav {
   width: 15.4688vw;
-  height: 100%; /* 유동적 */
+  height: 90%; /* 유동적 */
 }
 
 #section nav #navContents {
@@ -32,6 +42,7 @@ header {
   text-align: center;
   line-height: 1500px;
   color: #707070;
+
   /* background-color: #707070; */
   /* border-right: 1px solid #707070; */
 }
@@ -52,12 +63,14 @@ footer {
   width: 100vw;
   /* height: 108px; */
   height: 10vh;
-  border-top: 1px solid #707070;
+  margin-top : -10vh;
+
+
 
   font-size: 24px;
   text-align: center;
   line-height: 10vh;
-  color: #666;
+
 }
 
 /* 헤더 영역 */
@@ -69,8 +82,6 @@ footer {
 
 .header-logo {
   margin-left: 1.25vw;
-  width: 15.9375vw;
-  height: 70px;
   object-fit: fill;
 }
 
@@ -163,7 +174,7 @@ footer {
   /* background-size: contain; */
   width: 27.2917vw;
   height: 295px;
-  border: solid 1px #707070;
+
 }
 
 #section
@@ -356,15 +367,17 @@ footer {
 /* //비디오 영역 마무리*/
 
 .sidenav {
+
   height: 100%;
-  width: 100%;
+  width: 80%;
   z-index: 1;
   top: 0;
   left: 0;
   background-color: #ffffff;
   overflow-x: hidden;
-  padding-top: 20px;
-  /* border: 1px solid #f0f0f0; */
+  padding-top: 60px;
+  margin-right:70px;
+  margin-left:30px;
 }
 
 /* Style the sidenav links and the dropdown button */
@@ -397,27 +410,26 @@ footer {
   text-align: left;
   color: #7d7b7c;
 }
-/* On mouse-over */
+
+
+
 .sidenav a:hover,
 .dropdown-btn:hover {
   color: #f1f1f1;
 }
 
-/* Main content */
 .main {
-  margin-left: 200px; /* Same as the width of the sidenav */
-  font-size: 18px; /* Increased text to enable scrolling */
+  margin-left: 200px; 
+  font-size: 18px; 
   padding-left: 50px;
 }
 
-/* Add an active class to the active dropdown button */
 .dropdown-btn.active {
   background-color: rgb(160, 203, 59);
   color: #fdf8fa;
   font-weight: 500;
 }
 
-/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
 .dropdown-container {
   display: none;
   background-color: #ffffff;
@@ -454,4 +466,56 @@ footer {
 .fa-caret-down {
   float: right;
   padding-right: 20px;
+}
+
+
+
+/* footer 부분 */
+
+
+#footer_divider
+{
+  border : none;
+  width: 100%;
+  height: 2px;
+  margin: 0 0 8px;
+  background-image: linear-gradient(to bottom, #e1e857, #004483);
+}
+
+#footer_contents
+{
+  display: flex;
+  width: 100vw;
+  height: 10vh;
+  position: relative;
+}
+#info
+{
+  display: flex;
+  text-align: center;
+  margin : auto;
+
+}
+
+.footer-logo
+{
+  width:270px;
+  height:93px;
+
+}
+
+#school_info
+{
+  width: 80%;
+  height: 101px;
+  margin: 19px 0 0 14px;
+  font-size: 16px;
+  text-align: left;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.22;
+  font-weight: 100;
+  letter-spacing: normal;
+  color: #7d7b7c;
+  
 }
