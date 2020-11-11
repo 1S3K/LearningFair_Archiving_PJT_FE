@@ -105,109 +105,6 @@ footer {
   margin-top: 43px;
 }
 
-/* 필터 영역 시작 : select-box */
-
-/* #section #contents #contentsHeader #contentsHeaderInfo */
-#filterMenu {
-  /* width: 19.0625vw;
-  height: 42px; */
-  font-size: 1.3542vw;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 42px;
-  letter-spacing: normal;
-  /* text-align: center;
-  color: #707070;
-  border: solid 1px #707070; */
-
-  margin-right: 12.0833vw;
-}
-
-.select-box {
-  display: flex;
-  width: 19.0625vw;
-  flex-direction: column;
-}
-
-.select-box .options-container {
-  /* color: #707070; */
-  max-height: 0;
-  width: 100%;
-  opacity: 0;
-  transition: all 0.4s;
-  overflow: hidden;
-
-  order: 1;
-
-  /* border: 1px solid #707070; */
-}
-
-.selected {
-  border: 1px solid #707070;
-  margin-bottom: 8px;
-
-  position: relative;
-
-  order: 0;
-}
-
-.selected::after {
-  content: '';
-  background: url('../../assets/image/arrow-down.svg');
-  background-size: contain;
-  background-repeat: no-repeat;
-
-  position: absolute;
-  height: 100%;
-  width: 1.0417vw;
-  /* 14px = 0.7292 */
-  right: 0.7292vw;
-  top: 20px;
-
-  transition: all 0.4s;
-}
-
-.select-box .options-container.active {
-  max-height: 240px;
-  opacity: 1;
-  overflow-y: scroll;
-}
-
-.select-box .options-container.active + .selected::after {
-  transform: rotateX(180deg);
-  top: -20px;
-}
-
-.select-box .option,
-.selected {
-  padding: 8px 24px;
-  text-align: center;
-  color: #707070;
-  cursor: pointer;
-
-  /* border: 1px solid #707070; */
-}
-
-.select-box .option {
-  border: 1px solid #707070;
-}
-
-.select-box .option:hover {
-  background-color: #154483;
-  color: #fff;
-}
-
-.select-box label {
-  cursor: pointer;
-}
-
-.select-box .option .radio {
-  display: none;
-}
-
-/* 필터 영역 마무리 : select-box */
-
 #section #contents #contentsHeader #contentsHeaderInfo #projectCount {
   width: 20.0521vw;
   height: 42px;
@@ -502,7 +399,7 @@ video {
 }
 
 /* Add an active class to the active dropdown button */
-.active {
+.dropdown-btn.active {
   background-color: rgb(160, 203, 59);
   color: #fdf8fa;
   font-weight: 500;
