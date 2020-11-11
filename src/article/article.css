@@ -135,7 +135,9 @@ footer {
 
 #section #contents #contentsArticle .article-container {
   /* background-color: blue; */
+  flex-direction: row;
   width: 78.9063vw;
+  margin-bottom: 44px;
 }
 
 #section #contents #contentsArticle .article-container #article {
@@ -146,7 +148,7 @@ footer {
   border: 1px solid #d8d8d8;
 }
 /* articleImg = 27.2917vw */
-/* articleImg = 698px = 36.3542vw */
+/* articleContents = 698px = 36.3542vw */
 /* articleShow = 293px = 15.2604vw */
 
 #section
@@ -327,6 +329,11 @@ footer {
 }
 /* // 아티클 영역 마무리 */
 
+.article-area {
+  display: flex;
+  flex-direction: column;
+}
+
 /* 비디오 영역*/
 #showVideoBtn {
   width: 100%;
@@ -337,8 +344,13 @@ footer {
   color: #fff;
 }
 
-video {
+#video {
   display: none;
+}
+
+.video {
+  width: 78.9063vw;
+  display: block;
   border: 1px solid #707070;
 }
 /* //비디오 영역 마무리*/
