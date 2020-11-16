@@ -1,12 +1,15 @@
 
 
-  header {
-    position: sticky; /* top에 고정 */
+
+
+/* 전체 레이아웃 */
+header {
+    position: block; /* top에 고정 */
     top: 0;
     width: 100vw;
-    /* height: 108px; */
+    height: 108px;
     height: 10vh;
-    background-color: #fff;
+    background-color: none;
     border-image: linear-gradient(to right, #e1e857, #004483);
     border-image-slice: 1;
     border-bottom: solid 2px;
@@ -15,10 +18,8 @@
     line-height: 10vh;
     color: #707070;
     z-index: 1000;
-  } 
-
-/* 전체 레이아웃 */
-
+    
+  }
 
     /* 헤더 영역 */
     .header-container {
@@ -28,7 +29,10 @@
       }
       
       .header-logo {
-        margin-left: 1.25vw;
+ 
+       margin: 0 auto;
+       margin-top : 15px;
+       height : 60px;
     
         object-fit: fill;
       }
@@ -40,17 +44,25 @@
     display: flex;
     flex-direction: column;
     height: 90vh; /* 임시 높이 */
+    
+    }
+
+    .container p 
+    {
+        font-size : 12px;
     }
   
 
     .main_banner_area
     {
         margin : 5vh auto;
+        margin-bottom: 30px;
     }
     
     .main_banner_img
     {
-        height: 25vh;
+        margin : auto;
+        width: 80vw;
     }
 
     .login_button_area
@@ -65,12 +77,14 @@
         color:#fff;
         border:none;
         position:relative;
-        height:60px;
+        height:30px;
         font-size:1.6em;
         padding:0 2em;
         cursor:pointer;
         transition:800ms ease all;
         outline:none;
+        
+        
       }
       button:hover{
         background:#fff;
@@ -118,7 +132,10 @@ footer {
   
   }
  
-  
+  .login_button_area
+  {
+      margin-bottom : 30px;
+  }
 
   
   
@@ -148,18 +165,17 @@ footer {
   
   .footer-logo
   {
-    width:270px;
-    height:93px;
+   display:none;
   
   }
   
   #school_info
   {
-    width: 80%;
+    width: 85%;
     height: 101px;
-    margin: 19px 0 0 14px;
-    font-size: 16px;
-    text-align: left;
+    margin: auto;
+    font-size: 12px;
+    text-align: center;
     font-stretch: normal;
     font-style: normal;
     line-height: 1.22;

@@ -4,10 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>2020-2학기 러닝페어 온라인 발표회</title>
-
+   
     <!-- css 파일 -->
+
+    <link href="./login.css"   rel="stylesheet" type="text/css" media="screen and (min-width:481px)">
+    <link href="./login_mobile.css" rel="stylesheet" type="text/css" media="screen and (min-width:0px) and (max-width:480px)"> 
     <link rel="stylesheet" href="../../style/reset.css" />
-    <link rel="stylesheet" href="./login.css" />
     <link rel="stylesheet" href="./input.css" />
     <link
       rel="stylesheet"
@@ -41,7 +43,7 @@
                     <label for="example" data-label="소속"></label>
        
                 </div>
-                <p> ex) 사범대학 </p>      
+                <p> ex) 사범대학 // 외부인인 경우에는 "관람"이라고 기재해주세요. </p>      
             </div>
 
             <div class="container">
@@ -50,7 +52,7 @@
                     <label for="example" data-label="학번"></label>
        
                 </div>
-                <p> ex) 2020123123 </p>      
+                <p> 외부인인 경우에는 2020123123을 사용해주세요.</p>      
             </div>
 
             <div class="container">
@@ -61,6 +63,15 @@
                 </div>
                 <p> ex) 홍길동 </p>      
             </div>
+
+            <div class="container">
+              <div class="form-item">
+                  <input type="text" id="example" placeholder="&nbsp;">
+                  <label for="example" data-label="방명록"></label>
+     
+              </div>
+              <p>  </p>      
+          </div>
 
         
      </div>
