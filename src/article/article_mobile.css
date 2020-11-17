@@ -72,10 +72,20 @@ header {
       }
       /* //헤더 영역 */
       
+
+
+
+
+
+
   
   #section {
     display: block;
     height: 800px; /* 임시 높이 */
+    margin-bottom: -80px;
+    width: 100vw;
+    overflow-y:visible;
+    overflow-x:hidden;
   }
   
   #section nav {
@@ -103,13 +113,13 @@ header {
 
 
   #section #contents {
-    width: 84.5332vw;
-    height: 100%; /* 유동적 */
+    width: 100%;
+    height: auto; /* 유동적 */
     /* background-color: #555; */
   }
   
   #section #contents #contents-container {
-    width: 78.4375vw;
+    width: 100%;
     height: 100%; /* 유동적 */
     /* background-color: #555; */
   }
@@ -169,29 +179,31 @@ header {
 
 
 
-
-
-footer {
-    width: 400px;
-
-    height: 10vh;
-    margin-top : -10vh;
-  
-  
-  
-    font-size: 24px;
+#section #contents
+{
+    padding-top : 30px;
+    border:1px rgb(157,157,157) solid;
+}
+#section #contents #contentsHeader #className
+{
+    font-size: 18px;
     text-align: center;
-    line-height: 10vh;
-  
-  }
-  
-
-
+    color: #154483;
+    font-weight: bold;
+}
   
   #section #contents #contentsHeader #contentsHeaderInfo {
-    display: flex;
+    display: block;
+    text-align: center;
+    font-size : 12px;
     justify-content: flex-end;
-    margin-top: 43px;
+    margin-top: 20px;
+  }
+
+  #projectCount strong
+  {
+      color:#154483;
+      font-weight: bold;
   }
   
 
@@ -202,13 +214,13 @@ footer {
   #section #contents #contentsArticle {
     /* background-color: orange; */
     width: 100%;
-    margin-top: 84.5px;
+    margin-top: 30px;
   }
   
   #section #contents #contentsArticle .article-container {
     /* background-color: blue; */
     flex-direction: row;
-    width: 78.9063vw;
+    width: 100%;
     margin-bottom: 44px;
   }
   
@@ -237,6 +249,12 @@ footer {
     height: 295px;
   
   }
+
+  #article #articleImg
+  {
+      width: 30%;
+  }
+
   
   #section
     #contents
@@ -245,7 +263,7 @@ footer {
     #article
     #articleContents {
     /* background-color: #333; */
-    width: 36.3542vw;
+    width: 40%;
     height: 295px;
     display: flex;
     flex-direction: column;
@@ -255,8 +273,8 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 15.2604vw;
-    height: 295px;
+    width: 30%;
+    height: 100%;
     border-left: 1px solid #d8d8d8;
   }
   
@@ -268,16 +286,16 @@ footer {
     #articleContents
     #articleContentsTitle {
     height: 37px;
-    margin-top: 20.5px;
-    font-size: 1.5625vw;
-    font-weight: normal;
+    margin-top: 20px;
+    font-size: 15px;
+    font-weight: 600;
     font-stretch: normal;
     font-style: normal;
     line-height: 1.33;
     letter-spacing: normal;
-    text-align: left;
+    text-align: center;
     color: #707070;
-    margin-left: 1.5104vw;
+    
   }
   
   #section
@@ -287,17 +305,18 @@ footer {
     #article
     #articleContents
     #articleContentsDesc {
-    height: 164px;
-    margin-top: 18px;
-    font-size: 1.25vw;
+    height: 100%;
+    margin-top: 8px;
+    font-size: 13px;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
-    line-height: 1;
+    line-height: 1.3;
     letter-spacing: normal;
-    text-align: left;
+    text-align: center;
     color: #707070;
-    margin-left: 1.5104vw;
+    padding-right : 10px;
+    
   }
   
   #section
@@ -329,7 +348,7 @@ footer {
   #likeCount {
     width: 64px;
     height: 27px;
-    font-size: 1.3542vw;
+    font-size: 15px;
     font-weight: 800;
     font-stretch: normal;
     font-style: normal;
@@ -342,60 +361,61 @@ footer {
   
   #groupInfo {
     margin-left: 1.5365vw;
-    margin-top: 14.5px;
+    
   }
   #groupNameLabel {
-    width: 64px;
+    width: 90%;
     height: 27px;
     font-family: YDIYGO340;
-    font-size: 1.1458vw;
+    font-size: 15px;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
     line-height: 1.09;
     letter-spacing: normal;
-    text-align: left;
+    text-align: center;
     color: #154483;
+    padding-top : 21px;
   }
   #groupName {
-    width: 207px;
+    width: 90%;
     height: 27px;
     font-family: YDIYGO330;
-    font-size: 1.0417vw;
+    font-size: 12px;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
     line-height: 1.2;
     letter-spacing: normal;
-    text-align: left;
+    text-align: center;;
     color: #707070;
     margin-top: 5px;
   }
   #groupMemberLabel {
-    width: 64px;
+    width: 90%;
     height: 27px;
     font-family: YDIYGO340;
-    font-size: 1.1458vw;
+    font-size: 15px;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
     line-height: 1.09;
     letter-spacing: normal;
-    text-align: left;
+    text-align: center;
     color: #154483;
     margin-top: 17px;
   }
   #groupMember {
-    width: 207px;
+    width: 90%;
     height: 111px;
     font-family: YDIYGO330;
-    font-size: 1.0417vw;
+    font-size: 8px;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
     line-height: 1.4;
     letter-spacing: normal;
-    text-align: left;
+    text-align: center;
     color: #707070;
     margin-top: 10px;
   }
@@ -537,11 +557,33 @@ footer {
     padding-right: 20px;
   }
   
+  #section
+  {
+      margin-bottom:0;
+  }
   
   
   /* footer 부분 */
   
+
+
+
+
+
+
+
+
+
+  
   .footer{
+  
+  
+    bottom: 0;
+  
+  
+    font-size: 24px;
+    text-align: center;
+    line-height: 10vh;
 
     width: 100vw;
     height : 80px;

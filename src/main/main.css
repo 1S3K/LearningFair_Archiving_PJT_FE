@@ -29,6 +29,21 @@ header {
     
         object-fit: fill;
       }
+      .mobile-title-image-div
+      {
+
+       display: none;
+      }
+      .mobile-title-image
+      {
+  
+        display: none;
+
+      }
+      .mobile-title
+      {
+        display: none;
+      }
       
       .header-user {
         padding-right: 1.25vw;

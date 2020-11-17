@@ -84,7 +84,25 @@ footer {
   margin-left: 1.25vw;
   object-fit: fill;
 }
+.mobile-title-image-div
+{
 
+ display: none;
+}
+.mobile-title-image
+{
+
+  display: none;
+
+}
+.mobile-title
+{
+  display: none;
+}
+
+.header-user {
+  padding-right: 1.25vw;
+}
 .header-user {
   padding-right: 1.25vw;
 }
